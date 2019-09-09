@@ -3,6 +3,7 @@ header {
 
     .logo {
         font-weight: bold;
+        color: hsl(40, 100%, 50%);
     }
 
     nav {
@@ -21,7 +22,7 @@ header {
                     font-size: .8em;
 
                     &:hover {
-                        background: #8E2BFF;
+                        background: hsl(40, 100%, 50%);
                     }
                 }
             }
