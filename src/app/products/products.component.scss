@@ -1,0 +1,40 @@
+.farm-product{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    &:hover{
+        background-color: hsl(20, 50%, 60%);
+    }
+
+    h2{
+        font-family: 'Hepta Slab', serif;
+        font-weight: 500;
+        padding: 10px;
+        margin-left: 40px;
+        text-transform: capitalize;
+        flex-grow: 1;
+    }
+    .product-info{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        max-width: 500px;
+        flex-grow: 1;
+        background-color: black;
+        color: white;
+
+        h3{
+            font-size: 1.9rem;
+            margin: 5px 0px;
+            font-weight: 500;
+        }
+        .product-footer{
+            font-size: 1rem;
+        }
+        
+    }
+
+}

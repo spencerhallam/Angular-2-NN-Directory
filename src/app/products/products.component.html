@@ -1,0 +1,16 @@
+<h1>Products</h1>
+
+<div *ngIf="products">
+        <div *ngFor="let product of products" class="farm-product">
+            <h2>{{ product.item }}</h2>
+            <div class="product-info">
+              <h3>Seller: {{ product.business ? product.business : "none"}} </h3> 
+              <div>Farm: {{ product.farm_name ? product.farm_name : 'none provided' }} </div>
+              <div>Website: <a href="{{ product.website ? product.website : '#' }}">{{ product.website ? product.website : 'n/a' }}</a> </div>
+              <div>Address: {{ product.location_1_location ? product.location_1_location : "not provided" }}, {{ product.location_1_city }}, {{ product.location_1_state }}, {{ product.zipcode }} </div>
+              <div>Phone: {{ product.phone1 ? product.phone1 : 'none'}} </div>
+              <div class="product-footer">Category: {{ product.category ? product.category  : 'none' }} | Farmer Id: {{ product.farmer_id ? product.farmer_id : 'none'}} </div>
+            </div>
+        </div>    
+    </div>
+

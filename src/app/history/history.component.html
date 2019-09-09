@@ -1,0 +1,8 @@
+<h1>Home</h1>
+
+<ul *ngIf="dates">
+    <li *ngFor="let date of dates.data">
+        <img [src]="date.date"/>
+        <p>{{ date.date }} {{ date.url }}</p>
+    </li>    
+</ul>
