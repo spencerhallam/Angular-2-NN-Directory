@@ -6,7 +6,7 @@
     border: 1px solid lightgray;
     margin-bottom: 10px;
     &:hover{
-        background-color: hsl(20, 50%, 60%);
+        background-color: hsl(20, 100%,70%);
     }
 
     h2{
@@ -23,7 +23,7 @@
         padding: 20px;
         max-width: 500px;
         flex-grow: 1;
-        background-color: black;
+        background-color: hsl(20, 50%, 30%);;
         color: white;
 
         h3{
