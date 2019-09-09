@@ -9,7 +9,6 @@ import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { HistoryComponent } from './history/history.component';
 import { ProductsComponent } from './products/products.component';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { ProductsComponent } from './products/products.component';
     AboutComponent,
     ContactComponent,
     HomeComponent,
-    HistoryComponent,
     ProductsComponent
   ],
   imports: [
