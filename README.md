@@ -1,4 +1,7 @@
-# Angular7
+# Connecticut Farm Goods (repostitory name: "Angular-2-NN-Directory")
+This is a search application to find producers of Agricultural commodities in Connecticut. View a deployed version of this site here: https://spencerhallam.github.io/Angular-2-NN-Directory/
+
+Responsive layout is coming soon!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
