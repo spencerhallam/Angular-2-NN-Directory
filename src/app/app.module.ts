@@ -8,8 +8,10 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
+import { SorterPipe } from './sorter.pipe';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { ProductsComponent } from './products/products.component';
     NavComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    FilterPipe,
+    SorterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

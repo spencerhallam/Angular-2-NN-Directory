@@ -1,9 +1,9 @@
 header {
-    background: hsl(0, 0%, 0%);
+    background: #092d40;
 
     .logo {
         font-weight: bold;
-        color: hsl(40, 100%, 50%);
+        color: #ffcc00;
     }
 
     nav {
@@ -22,7 +22,7 @@ header {
                     font-size: .8em;
 
                     &:hover {
-                        background: hsl(40, 100%, 50%);
+                        background: #16648b;
                     }
                 }
             }

@@ -1,8 +1,14 @@
 <h1>Products</h1>
+<p>Looking for a great live search tool to browse for farm-based commodities in Connecticut? Type the name of a farm product in the field below to discover the farms and farmers that produce great things like fine jellies, hay or draft horses! There's a cornicopia of agricultural bounty in this great state.</p>
 
+<p><i>All commodities data provided by <a href="https://dev.socrata.com/foundry/data.ct.gov/y6p2-px98">data.ct.gov</a> and Tyler Kleycamp</i></p>
+<form id="filter">
+
+<input type="text" [(ngModel)]="itemtomatch" placeholder="Find farm goods..." name="something" />
+</form>
 <div *ngIf="products">
-        <div *ngFor="let product of products" class="farm-product">
-            <h2>{{ product.item }}</h2>
+        <div *ngFor="let product of products | filter:itemtomatch | sorter:item" class="farm-product">
+            <h2>{{ product.item | uppercase }} </h2>
             <div class="product-info">
               <h3>Seller: {{ product.business ? product.business : "none"}} </h3> 
               <div>Farm: {{ product.farm_name ? product.farm_name : 'none provided' }} </div>
@@ -12,5 +18,4 @@
               <div class="product-footer">Category: {{ product.category ? product.category  : 'none' }} | Farmer Id: {{ product.farmer_id ? product.farmer_id : 'none'}} </div>
             </div>
         </div>    
-    </div>
-
+</div>

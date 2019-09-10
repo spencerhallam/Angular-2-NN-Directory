@@ -9,8 +9,7 @@ export class FarmdataService {
   constructor(private http: HttpClient) { }
   
   getProducts() {
-    //return this.http.get('https://data.ct.gov/resource/y6p2-px98.json?category=Fruit&item=Peaches');
+    //EXAMPLE: return this.http.get('https://data.ct.gov/resource/y6p2-px98.json?category=Fruit&item=Peaches');
     return this.http.get('https://data.ct.gov/resource/y6p2-px98.json');
-    //https://dev.socrata.com/
   }
 }
