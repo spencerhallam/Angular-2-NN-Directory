@@ -1,4 +1,5 @@
-# Angular7
+# Angular-2-NN-Directory
+View a deployed version of this site here: https://spencerhallam.github.io/Angular-2-NN-Directory/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
