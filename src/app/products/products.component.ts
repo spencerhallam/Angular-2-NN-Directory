@@ -11,6 +11,7 @@ import { FilterPipe } from '../filter.pipe'
 export class ProductsComponent implements OnInit {
   
   products: any;
+  itemtomatch: any;
 
   constructor(private productinfo: FarmdataService) { }
   

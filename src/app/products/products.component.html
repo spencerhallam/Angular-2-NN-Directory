@@ -7,7 +7,7 @@
 <input type="text" [(ngModel)]="itemtomatch" placeholder="Find farm goods..." name="something" />
 </form>
 <div *ngIf="products">
-        <div *ngFor="let product of products | filter:itemtomatch | sorter:item" class="farm-product">
+        <div *ngFor="let product of products | filter:itemtomatch " class="farm-product">
             <h2>{{ product.item | uppercase }} </h2>
             <div class="product-info">
               <h3>Seller: {{ product.business ? product.business : "none"}} </h3> 
